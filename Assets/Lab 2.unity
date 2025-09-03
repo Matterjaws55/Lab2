@@ -938,6 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520111674}
+  - component: {fileID: 520111675}
   m_Layer: 0
   m_Name: Spheres
   m_TagString: Untagged
@@ -965,6 +966,21 @@ Transform:
   - {fileID: 1380614357}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520111675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520111673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07672f5c3f85ef849bb6780ffa148071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSphere
+  size: 0
+  cube: {fileID: 0}
+  sphere: {fileID: 0}
 --- !u!1 &1085860830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1104,7 @@ GameObject:
   - component: {fileID: 1333570918}
   - component: {fileID: 1333570917}
   - component: {fileID: 1333570916}
+  - component: {fileID: 1333570919}
   m_Layer: 0
   m_Name: Cube 1
   m_TagString: Untagged
@@ -1187,6 +1204,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333570914}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1333570919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333570914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07672f5c3f85ef849bb6780ffa148071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSphere
+  size: 0
+  cube: {fileID: 0}
+  sphere: {fileID: 0}
 --- !u!1 &1380614356
 GameObject:
   m_ObjectHideFlags: 0
