@@ -806,8 +806,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404085272}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -816,7 +816,7 @@ Transform:
   - {fileID: 1085860831}
   - {fileID: 1612985912}
   - {fileID: 365267314}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 979025232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405978598
 GameObject:
@@ -938,7 +938,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520111674}
-  - component: {fileID: 520111675}
   m_Layer: 0
   m_Name: Spheres
   m_TagString: Untagged
@@ -954,8 +953,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520111673}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -964,23 +963,67 @@ Transform:
   - {fileID: 405978599}
   - {fileID: 200410384}
   - {fileID: 1380614357}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 979025232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &520111675
+--- !u!1 &979025230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979025232}
+  - component: {fileID: 979025231}
+  m_Layer: 0
+  m_Name: Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &979025231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520111673}
+  m_GameObject: {fileID: 979025230}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07672f5c3f85ef849bb6780ffa148071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CubeSphere
-  size: 0
-  cube: {fileID: 0}
-  sphere: {fileID: 0}
+  size: 1
+  cubes:
+  - {fileID: 1333570914}
+  - {fileID: 1993030859}
+  - {fileID: 1085860830}
+  - {fileID: 1612985911}
+  - {fileID: 365267313}
+  spheres:
+  - {fileID: 64257296}
+  - {fileID: 94245207}
+  - {fileID: 405978598}
+  - {fileID: 200410383}
+  - {fileID: 1380614356}
+--- !u!4 &979025232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979025230}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 404085273}
+  - {fileID: 520111674}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085860830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,8 +1260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CubeSphere
   size: 0
-  cube: {fileID: 0}
-  sphere: {fileID: 0}
+  cubes: []
+  spheres: []
 --- !u!1 &1380614356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,5 +1601,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 155800375}
   - {fileID: 237547319}
-  - {fileID: 404085273}
-  - {fileID: 520111674}
+  - {fileID: 979025232}
